@@ -1,0 +1,293 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+#title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    color: #152C5B;
+}
+#t1 {
+    color: #3252DF;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.content {
+    width: 422px;
+    height: 458px;
+    left: 150px;
+    top: 150px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 63px;
+    color: #152C5B;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #152C5B; 
+}
+
+#title-text {
+    color: #152C5B;
+}
+
+#thead {
+    margin-top: 30px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #B0B0B0;
+}
+
+#content-text {
+    margin-top: 30px;
+    width: 300px;
+}
+
+#btn1 {
+    height: 40px;
+    width: 200px;
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    border: 0;
+    color: #FFFFFF;
+}
+
+#btn2 {
+    height: 40px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    border: 0;
+    color: #FFFFFF;
+}
+
+#t2 {
+    color: #152C5B;
+    font-weight: 600;
+}
+
+.items {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    width: 140px;
+    height: 69px;
+}
+
+.banner {
+    width: 559px;
+    height: 450px;
+    left: 731px;
+    top: 150px;
+    justify-content: right;
+}
+
+#hero-img {
+    left: 486.46px;
+    top: -2.96px;
+    background: url(image.png);
+    border-radius: 100px 15px 15px 15px;
+}
+
+.section {
+    margin-top: 80px;
+}
+
+.mp {
+    margin-top: 50px;
+    margin-left: -30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#lead-mp {
+    height: 460px;
+    width: 361px;
+    border-radius: 15px;
+}
+
+.inside-mp {
+    display: grid;
+    grid-template-columns: repeat(2, [col-start] 1fr);
+    gap: 20px;
+}
+
+#other-mp {
+    width: 361px;
+    height: 215px;
+    border-radius: 15px;
+}
+
+.inside {
+    margin-top: 50px;
+    margin-left: -30px;
+    display: grid;
+    grid-template-columns: repeat(4, [col-start] 1fr);
+    gap: 0px;
+}
+
+#sec-img {
+    height: 180px;
+    width: 263px;
+    border-radius: 15px;
+}
+
+.caption {
+    width: 260px;
+}
+
+.detail {
+    margin-top: 40px;
+}
+
+#new-det {
+    margin-top: 20px;
+}
+
+#full-img {
+    height: 600px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.happy-story {
+    margin-top: 80px;
+    width: 76%;
+    height: 541px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#happy-img {
+    width: 380px;
+    height: 500px;
+    border-radius: 100px 15px 15px 15px;
+}
+.their-story {
+    width: 40%;
+    height: 351px;
+}
+
+.stars {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 36px;
+}
+
+#star {
+    width: 34.5px;
+    height: 34.5px;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}

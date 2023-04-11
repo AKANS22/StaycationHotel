@@ -1,0 +1,16 @@
+﻿@model Hotel 
+
+
+<div class="section">
+    <div class="thumbnail">
+        <img id="full-img" alt="@Model.Name" src="@Model.ImageUrl">
+        <div class="detail">
+            <h3 id="new-det">
+                <a href="#">@Model.Name</a>
+            </h3>
+            <h4 id="new-det">@Model.ShortDescription</h4>
+            <p id="detail">@Model.LongDescription</p>
+            <h3 class="pull-right" id="new-det">@Model.Price.ToString("c") per night.</h3>
+        </div>
+    </div>
+</div>

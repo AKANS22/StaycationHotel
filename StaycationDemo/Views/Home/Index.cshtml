@@ -1,0 +1,95 @@
+﻿@model StaycationDemo.ViewModels.HomeViewModel
+
+<div class="hero">
+    <div class="content">
+        <h1>
+            Forget Busy Work,
+            Start Next Vacation
+        </h1>
+        <div id="content-text">
+            <p>We provide what you need to enjoy your holiday with family. Time to make another memorable moment.</p>
+        </div>
+        <button class="btn-primary" id="btn1">Show Me Now</button>
+        <div class="items">
+			<div class="item">
+				<img src="~/images/items/ic_traveler (1) 1.png" />
+                <p><span id="t2">80,409</span> travelers</p>
+            </div>
+			<div class="item">
+				<img src="~/images/items/ic_treasure 1.png" />
+                <p><span id="t2">862</span> treasure</p>
+            </div>
+			<div class="item">
+				<img src="~/images/items/ic_cities 1.png" />
+                <p><span id="t2">1,492</span> cities</p>
+            </div>
+        </div>
+    </div>
+	<div class="banner">
+		<img id="hero-img" src="~/images/image 3.png" />
+    </div>
+</div>
+
+<div>
+    <div>
+        <img />
+    </div>
+</div>
+
+<div class="section">
+    <h4>Most Picked</h4>
+    <div class="mp">
+		<img src="~/images/mostpicked/pic.png" />
+        <div class="inside-mp">
+            @for (int i = 1; i < Model.Hotels.Where(h => h.IsMostPicked == true).Count<Hotel>(); i++)
+            {
+                var hotels = Model.Hotels.Where(h => h.IsMostPicked == true).ToList<Hotel>();
+                <img id="other-mp" src="@hotels[i].ImageUrl" />
+            }
+        </div>
+    </div>
+</div>
+
+@foreach (var c in Model.AllCategories)
+{
+    <div class="section">
+        <h4>@c.CategoryName</h4>
+        <div class="inside">
+            
+            @foreach (var hotel in Model.Hotels.Where(h => (h.CategoryId == c.CategoryId)))
+            {
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="thumbnail">
+                        <img id="sec-img" src="@hotel.ImageUrl" />
+                        <div class="caption">
+                            <p>
+                                <a asp-controller="Home" asp-action="Details" asp-route-id="@hotel.HotelId">@hotel.Name</a>
+                                <br>
+                                @hotel.Location
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+<div class="happy-story">
+    <div>
+        <img id="happy-img" src="https://s3-alpha-sig.figma.com/img/047a/953b/f76864880f9e72f6bd8861e6f1191381?Expires=1675641600&Signature=pkUshcovEJGfIZJh8~Ip9SwrN21URnTyceOQWViGHPdN8P2pvDNVOP3Iqe~Z-pRoytDUnBkmlTr00Ra2TE2R0hN0H3djnRROZ4C6i0uZW-~QlPrtojML8Azqt4jtRUGQ54Dgo9bnA5yal0Yl9X1229drb4JMQbpPXGgiB2rhQbsBg50jUqfjax5JWUKDG2JHcitBwJRZCu1lHJaXJnFsr1EgLs4w8vjSt0XFATNzR25mNr0tzc~whbkjbP93c05MILcV1OMwjxFR0FEgXIezuzmVSBRj-m2LR4~GNDDWkjeJukJIIazeKuPWhu0MkJa4z9VNKoMCP-GY8~iZWHzJIA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
+    </div>
+    <div class="their-story">
+        <h6>Happy Family</h6>
+		<div class="stars">
+			<img id="star" src="~/images/items/ic_star.png" />
+            <img id="star" src="~/images/items/ic_star.png" />
+            <img id="star" src="~/images/items/ic_star.png" />
+            <img id="star" src="~/images/items/ic_star.png" />
+            <img id="star" src="~/images/items/ic_star.png" />
+        </div>
+        <h5>What a great trip with my family and I should try again next time soon...</h5>
+        <button class="btn-primary" id="btn1">Read their story</button>
+    </div>
+
+</div>
+
